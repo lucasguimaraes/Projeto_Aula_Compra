@@ -5,10 +5,7 @@
 package forms;
 import classes.Cliente;
 import classes.Endereço;
-import classes.Usuario;
-import javax.swing.ComboBoxEditor;
 import javax.swing.JOptionPane;
-import javax.swing.JPasswordField;
 import persistencia.ClienteDAO;
 
 
@@ -101,7 +98,7 @@ public class Form_Cliente extends javax.swing.JFrame {
         setTitle("Preenchimento dos Dados do Cliente");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dados Pessoais", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dados Pessoais", 0, 0, new java.awt.Font("Arial", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(0, 51, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -181,7 +178,7 @@ public class Form_Cliente extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 240));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Endereço Completo", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Endereço Completo", 0, 0, new java.awt.Font("Arial", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -262,8 +259,8 @@ public class Form_Cliente extends javax.swing.JFrame {
         });
         getContentPane().add(sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(563, 463, 100, 40));
 
-        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-678)/2, (screenSize.height-549)/2, 678, 549);
+        setSize(new java.awt.Dimension(678, 549));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
